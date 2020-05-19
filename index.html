@@ -3,36 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
-    <title>Youtube Mobile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Youtube Mobie</title>
   </head>
   <body>
-    <div class="header">
-      <div>
+    <!-- Header -->
+    <header>
+      <div class="logo">
         <i class="fab fa-youtube"></i>
         <a href="#">Youtube</a>
       </div>
-      <div>
+      <div class="icons">
         <i class="fas fa-search"></i>
         <i class="fas fa-ellipsis-v"></i>
-        <i></i>
       </div>
-    </div>
-    <div>
-      <!-- video -->
-    </div>
-    <div>
-      <!-- video title -->
-    </div>
-    <div>
-      <!-- subscribe -->
-    </div>
-    <div>
-      <!-- up next -->
+    </header>
+    <!-- Video Player -->
+    <section class="player">
+      <video controls src="/video/Monkey.mp4"></video>
+    </section>
+    <div class="infoAndUpNext">
+      <!-- Video Infomation -->
+      <section class="info">
+        <div class="meta">
+          <ul class="hashtag">
+            <a href="#">#Nammjuicy</a>
+            <a href="#">#CloneCoding</a>
+            <a href="#">#Devlog</a>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp"
+              >Clone Coding: Youtube Mobile Website 유투브 모바일 웹 사이트 따라
+              만들기 | 프론트엔드 개발자 입문편 : HTML, CSS, JS 프론트엔드 실전
+              입문 영상</span
+            >
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <span class="viewer"> 1M views 1 month ago</span>
+          <div class="tools">
+            <button>
+              <i class="fas fa-thumbs-up active"></i>
+              <span>1K</span>
+            </button>
+            <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+            <button>
+              <i class="fas fa-share"></i>
+              <span>Share</span>
+            </button>
+            <button>
+              <i class="fas fa-plus"></i>
+              <span>Save</span>
+            </button>
+            <button>
+              <i class="fas fa-flag"></i>
+              <span>Report</span>
+            </button>
+          </div>
+        </div>
+        <div class="subscribe">
+          <div class="account">
+            <img src="/images/sampleImg.jpg" alt="" />
+            <div class="title">
+              <span>Nammjuicy</span>
+              <span class="views">1M subscribers</span>
+            </div>
+          </div>
+          <button>
+            Subscribe
+          </button>
+        </div>
+      </section>
+      <!-- UpNext -->
+      <ul class="upNext">
+        <span>UpNext</span>
+        <div>
+          <div class="thumbnail_img">
+            <img src="/images/thumbnail1.jpg" alt="" />
+          </div>
+          <div class="title">
+            <span>선물포장 하는 법 asmr 랩핑지로 봉투 꾸미기</span>
+            <span class="account">아지</span>
+            <span class="viwes">64k</span>
+          </div>
+          <button><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <div>
+          <div class="thumbnail_img">
+            <img src="/images/thumbnail2.jpg" alt="" />
+          </div>
+          <div class="title">
+            <span>귀엽고 아기자기한 소품 소개(소품샵 느낌s)</span>
+            <span class="account">아지</span>
+            <span class="viwes">40k</span>
+          </div>
+          <button><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <div>
+          <div class="thumbnail_img">
+            <img src="/images/thumbnail3.jpg" alt="" />
+          </div>
+          <div class="title">
+            <span
+              >바베큐(스테이크) 미니어처 DIY | 준비물) 미니어쳐 Mini놀이 패밀리
+              레스토랑편(NO.17 바베큐 폭립, 8세 이상 이용가능),
+              포스트물감(아크릴물감)
+            </span>
+            <span class="account">아지</span>
+            <span class="viwes">72k</span>
+          </div>
+          <button><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+      </ul>
     </div>
   </body>
 </html>
